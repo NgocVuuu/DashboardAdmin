@@ -26,9 +26,17 @@ app.use(helmet({
     directives: {
       defaultSrc: ["'self'"],
       styleSrc: ["'self'", 'https://fonts.googleapis.com', "'unsafe-inline'"],
-      styleSrcElem: ["'self'", 'https://fonts.googleapis.com', "'unsafe-inline'"],
       fontSrc: ["'self'", 'https://fonts.gstatic.com', 'data:'],
-      fontSrcElem: ["'self'", 'https://fonts.gstatic.com', 'data:'],
+      scriptSrc: ["'self'", "'unsafe-inline'", "'unsafe-eval'", "https://www.gstatic.com", "https://www.googleapis.com", "https://www.googletagmanager.com", "https://www.google-analytics.com"],
+      connectSrc: [
+        "'self'",
+        "wss://smart-parking-4a29c-default-rtdb.asia-southeast1.firebasedatabase.app",
+        "https://smart-parking-4a29c-default-rtdb.asia-southeast1.firebasedatabase.app",
+        "https://identitytoolkit.googleapis.com",
+        "https://firebase.googleapis.com",
+        "https://firestore.googleapis.com"
+      ],
+      // ...bạn có thể thêm các nguồn khác nếu cần...
     }
   }
 }));
