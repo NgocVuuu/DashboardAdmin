@@ -45,13 +45,13 @@ app.use('/api/admins', adminRoutes);
 // Serve static files from the React frontend app
 app.use(express.static(path.join(__dirname, '../frontend/build')));
 
+// Health check
+app.get('/api/health', (req, res) => res.json({ status: 'ok' }));
+
 // The "catchall" handler: for any request that doesn't match one above, send back React's index.html file.
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../frontend/build/index.html'));
 });
-
-// Health check
-app.get('/api/health', (req, res) => res.json({ status: 'ok' }));
 
 // Error handler
 app.use(errorHandler);
