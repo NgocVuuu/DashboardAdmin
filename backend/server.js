@@ -24,7 +24,9 @@ app.use(helmet({
     directives: {
       defaultSrc: ["'self'"],
       styleSrc: ["'self'", 'https://fonts.googleapis.com'],
+      styleSrcElem: ["'self'", 'https://fonts.googleapis.com'],
       fontSrc: ["'self'", 'https://fonts.gstatic.com'],
+      fontSrcElem: ["'self'", 'https://fonts.gstatic.com'],
       // ...bạn có thể thêm các nguồn khác nếu cần...
     }
   }
