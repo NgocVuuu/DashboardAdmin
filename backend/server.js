@@ -48,8 +48,8 @@ app.use(express.static(path.join(__dirname, '../frontend/build')));
 // Health check
 app.get('/api/health', (req, res) => res.json({ status: 'ok' }));
 
-// The "catchall" handler: for any request that doesn't match one above, send back React's index.html file.
-app.get('*', (req, res) => {
+// The "catchall" handler: only serve index.html for non-API, non-static requests
+app.get(/^\/(?!api\/).*/, (req, res) => {
   res.sendFile(path.join(__dirname, '../frontend/build/index.html'));
 });
 
