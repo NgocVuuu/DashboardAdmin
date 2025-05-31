@@ -27,7 +27,16 @@ app.use(helmet({
       defaultSrc: ["'self'"],
       styleSrc: ["'self'", 'https://fonts.googleapis.com', "'unsafe-inline'"],
       fontSrc: ["'self'", 'https://fonts.gstatic.com', 'data:'],
-      scriptSrc: ["'self'", "'unsafe-inline'", "'unsafe-eval'", "https://www.gstatic.com", "https://www.googleapis.com", "https://www.googletagmanager.com", "https://www.google-analytics.com"],
+      scriptSrc: [
+        "'self'",
+        "'unsafe-inline'",
+        "'unsafe-eval'",
+        "https://www.gstatic.com",
+        "https://www.googleapis.com",
+        "https://www.googletagmanager.com",
+        "https://www.google-analytics.com",
+        "https://smart-parking-4a29c-default-rtdb.asia-southeast1.firebasedatabase.app"
+      ],
       connectSrc: [
         "'self'",
         "wss://smart-parking-4a29c-default-rtdb.asia-southeast1.firebasedatabase.app",
