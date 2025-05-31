@@ -4,6 +4,7 @@ const cors = require('cors');
 const connectDB = require('./config/db');
 const errorHandler = require('./middlewares/errorHandler');
 const helmet = require('helmet');
+const path = require('path');
 
 // Import routes
 const parkingRoutes = require('./routes/parkingRoutes');
@@ -28,7 +29,6 @@ app.use(helmet({
       styleSrcElem: ["'self'", 'https://fonts.googleapis.com', "'unsafe-inline'"],
       fontSrc: ["'self'", 'https://fonts.gstatic.com', 'data:'],
       fontSrcElem: ["'self'", 'https://fonts.gstatic.com', 'data:'],
-      // ...bạn có thể thêm các nguồn khác nếu cần...
     }
   }
 }));
@@ -41,6 +41,14 @@ app.use('/api/users', userRoutes);
 app.use('/api/reports', reportRoutes);
 app.use('/api/payments', paymentRoutes);
 app.use('/api/admins', adminRoutes);
+
+// Serve static files from the React frontend app
+app.use(express.static(path.join(__dirname, '../frontend/build')));
+
+// The "catchall" handler: for any request that doesn't match one above, send back React's index.html file.
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../frontend/build/index.html'));
+});
 
 // Health check
 app.get('/api/health', (req, res) => res.json({ status: 'ok' }));
