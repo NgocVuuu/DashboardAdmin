@@ -21,12 +21,13 @@ app.use(cors());
 app.use(express.json());
 app.use(helmet({
   contentSecurityPolicy: {
+    useDefaults: true,
     directives: {
       defaultSrc: ["'self'"],
-      styleSrc: ["'self'", 'https://fonts.googleapis.com'],
-      styleSrcElem: ["'self'", 'https://fonts.googleapis.com'],
-      fontSrc: ["'self'", 'https://fonts.gstatic.com'],
-      fontSrcElem: ["'self'", 'https://fonts.gstatic.com'],
+      styleSrc: ["'self'", 'https://fonts.googleapis.com', "'unsafe-inline'"],
+      styleSrcElem: ["'self'", 'https://fonts.googleapis.com', "'unsafe-inline'"],
+      fontSrc: ["'self'", 'https://fonts.gstatic.com', 'data:'],
+      fontSrcElem: ["'self'", 'https://fonts.gstatic.com', 'data:'],
       // ...bạn có thể thêm các nguồn khác nếu cần...
     }
   }
