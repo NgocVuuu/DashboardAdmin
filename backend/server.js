@@ -3,6 +3,7 @@ const express = require('express');
 const cors = require('cors');
 const connectDB = require('./config/db');
 const errorHandler = require('./middlewares/errorHandler');
+const helmet = require('helmet');
 
 // Import routes
 const parkingRoutes = require('./routes/parkingRoutes');
@@ -18,6 +19,16 @@ const app = express();
 // Middleware
 app.use(cors());
 app.use(express.json());
+app.use(helmet({
+  contentSecurityPolicy: {
+    directives: {
+      defaultSrc: ["'self'"],
+      styleSrc: ["'self'", 'https://fonts.googleapis.com'],
+      fontSrc: ["'self'", 'https://fonts.gstatic.com'],
+      // ...bạn có thể thêm các nguồn khác nếu cần...
+    }
+  }
+}));
 
 // API routes
 app.use('/api/parking-lots', parkingRoutes);
