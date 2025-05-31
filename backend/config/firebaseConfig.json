@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "smart-parking-4a29c",
+  "private_key_id": "e48805d1818ad4b7f479280bdc871818b6b59780",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDd/eCVhCC5gAD9\nDI9vuMquT2g03HgFfi/dPZFcKBQQ8TmlkfjyQ/VlDaP6BOmXhp/4hpoaT4/mD9TK\nvvCs/aNSwLIhA3vF1Xm6sLIdTc2r54aUhnAo7VKA/CNSuoM2kb533t1lwRrDyFqr\nDBJre+P/sEKELb9ffIov6bDGA6B+thK/a8qzfC41a0SU6rI0oC7LxPqTkhlgIP0L\ngysagItU0eLUB1PJzofN7sxePr5JcBBDP2N3TDAP6nEPKvMStmt5G8aOOM0aq897\nw68m3A5ULQgxU98e9Cvwrp477uqB8q1a1+sBykPVtqWaeH9Jmi8KNmuPw4rVcRQc\nng0PEbbBAgMBAAECggEAXjonHA/rfBGzWbX9JGUB0x9tkhKK93nqgzRhAQcaDV73\nIypkyyDBhtVVZwiyxlikim9H9icTY4oQvsZxjlxS+QtGEPFTllPYyb+6uumNhYxO\n+bhe32BtBsb/j1wP2hffCy6UN17SJ4xhv/ztzKXXz25XrZdlhfhtB41gNYzQkTeZ\nG0smpX9M6eRgH5SGG+Rl1xJySki7ETZ1IpRkijc0horBHGyagK/ohikUBQfzBmsH\nJDLh7rtbJAjty3CmGcFgj0Lj9TEOAyZFWSYmNXLejVes9QTrrBo4B+FPGFclnBXS\nQugKtbwulgQPlc5RKwL0nV6++Xutag2V3z48/wibqQKBgQD2j5xBCC6SCrb+WSNf\nOWrwgKBLFp5hj2QwUj2h8f3Hv1I3cM+v8qDqvywlYJ76wdTRDHobBuWm2og8aCOi\nIKAi+F1v762uLtKJlXOvIQQavpoqjGahbDyx3wO+DSLXizVWG3fM+AWqDnbKe7TR\nN4hzVGEcU+EXnogdhSBiUfpzbwKBgQDmfXqY/q4M3sUwUCpwl3b4pw6WJ9YXZRbH\nvqZ8HyUS7ogxwRGf2mU0dZz03NzjLvvz41IQdBtHFW5o9QIJwALJ/z+f7VPR7glO\ncfCqkgurp3rhgMLm/994bhY5otJ/fSQFZGwx3N5+ezq5efa6OWs0gGiMk6wN0mhY\n7IXIEKegzwKBgQDAhmb2iNMEioVVmnj6VDVi0q1XtLO7bmJHMRCbMgB+RrCGRfqG\nYyiv5NMt5IJ/P3dUPS/jhsEwRpf2w0J/yIYCiHk9fKPbzQftEtwgNeGkmIx9CODi\nz0edhIzBjDRWpobhU9V6IXkazuyHM41/iKNtmsexfPXYoZuboWYmH+k21QKBgEpj\nDtEXyNZwgxVvmfLSf1wKlmORob/VKT/34MVIS+/LOftMw0Ji+qyulKRWL5fGjxwM\nLm0O+8q6OPL4t9qrtHq6vS8BKj8jYq+FiFWUYt3YZIkoxD5HMDku1k9tpB/vJFP1\nMBH7pXcOkEpR+XXqmBXOp29PLYUcdf7U/uwtq9vzAoGAWqSHCv/HsF4I/heci7Vy\nu7cxOiOnJ4GERsvotDUMQgZdl9Ihy/17e1124cOF18Kgb5pftap6KCuRIt1vv5lW\nMHY9Cjy5UnqIKf+DgFZjOrbyNspdJ8dHQpA/nYva/GFAO9VEcBfEJORDIs8LU1Xq\n6/p8Mc64NdiQ3gSES/J7vhk=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-fbsvc@smart-parking-4a29c.iam.gserviceaccount.com",
+  "client_id": "117833205460001564551",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fbsvc%40smart-parking-4a29c.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
