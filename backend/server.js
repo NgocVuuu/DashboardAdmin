@@ -43,17 +43,15 @@ app.use('/api/payments', paymentRoutes);
 app.use('/api/admins', adminRoutes);
 
 // Serve static files from the React frontend app
-// Chỉ enable dòng này nếu chắc chắn thư mục build tồn tại khi deploy backend
-// app.use(express.static(path.join(__dirname, '../frontend/build')));
+app.use(express.static(path.join(__dirname, '../frontend/build')));
 
 // Health check
 app.get('/api/health', (req, res) => res.json({ status: 'ok' }));
 
 // The "catchall" handler: only serve index.html for non-API, non-static requests
-// Chỉ enable dòng này nếu chắc chắn thư mục build tồn tại khi deploy backend
-// app.get(/^\/(?!api\/).*/, (req, res) => {
-//   res.sendFile(path.join(__dirname, '../frontend/build/index.html'));
-// });
+app.get(/^\/(?!api\/).*/, (req, res) => {
+  res.sendFile(path.join(__dirname, '../frontend/build/index.html'));
+});
 
 // Error handler
 app.use(errorHandler);
